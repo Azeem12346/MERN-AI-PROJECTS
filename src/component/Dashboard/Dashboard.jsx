@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Dashboard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
+import  Skeleton  from '@mui/material/Skeleton';
 
 function App() {
   return (
@@ -90,7 +91,7 @@ function App() {
 
         </div>
 
-        <div className={styles.DashboardRightTopCard}>
+        {/* <div className={styles.DashboardRightTopCard}>
 
           <div>Result</div>
 
@@ -115,8 +116,10 @@ function App() {
 
           </div>
 
-        </div>
+        </div> */}
 
+
+      <Skeleton variant="rectengular" sx={{ borderRadius: "20px" }} width={280} height={280} />
       </div>
 
     </div>

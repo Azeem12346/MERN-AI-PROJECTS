@@ -108,10 +108,9 @@ input {
     font: size 22px;
     color: white;
     cursor: pointer;
-    
 }
 
-.DashboardRight {
+.DashboardRight{
     width: 25%;
     height: fit-content;
     box-sizing: border-box;
@@ -122,32 +121,31 @@ input {
     gap: 20px;
 }
 
-.DashboardRightTopCard {
+.DashboardRightTopCard{
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0 , 0 , 0 , 0.2);
 }
 
 .profileImg {
     height: 50px;
     width: 450;
     border-radius: 100%;
-    margin-top: 10PX;
-
+    margin-top: 15px;
 }
 
 .DashboardRightTopCard div:first-child{
- font-size: 22px;
- font-weight: 700;
-  
+    font-size: 22px;
+    font-weight: 700;
 }
 
+
 @media screen and (max-width: 780px) {
-    .Dashboar {
+    .Dashboard {
         flex-direction: column;
     }
 
@@ -171,4 +169,33 @@ input {
     .DashboardUploadResume {
         flex-direction: column;
     }
+    
+.DashboardResumeBlock {
+    width: 100%;
+}
+
+.DashboardInputField {
+    width: 100%;
+}
+
+label {
+    width: 100%;
+    text-align: center;
+}
+
+.jobDesc {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textArea {
+    width: 100%;
+}
+.AnalyzeBtn {
+    border-radius: 30px;
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    box-sizing: border-box;
+}
 }
