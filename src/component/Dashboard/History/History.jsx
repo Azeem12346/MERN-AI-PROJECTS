@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from './History.module.css'
 import  Skeleton  from '@mui/material/Skeleton';
+import WithAuthHOC from '../../../utils/HOC/withAuthHOC';
 
 const History = () => {
   return (
@@ -56,4 +57,4 @@ const History = () => {
   )
 }
 
-export default History
+export default WithAuthHOC(History);

@@ -3,8 +3,10 @@ import styles from './Dashboard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import  Skeleton  from '@mui/material/Skeleton';
+import WithAuthHOC from '../../utils/HOC/withAuthHOC';
 
-function App() {
+
+function Dashboard() {
   return (
     <div className={styles.Dashboard}>
 
@@ -126,4 +128,4 @@ function App() {
   );
 }
 
-export default App;
+export default  WithAuthHOC(Dashboard);
